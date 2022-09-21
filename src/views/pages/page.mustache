@@ -2,7 +2,7 @@
 
 {{#banner}}
 
-<section class="banner" style="background-image: url('img/{{ background }}')">{{ title }}Todos os Produtos</section>
+<section class="banner" style="background-image: url('img/{{ background }}')">{{ title }}</section>
 
     <h2>{{ title }}Todos os produtos disponíveis</h2>
     {{/banner}}
@@ -16,5 +16,14 @@
       </div>
       {{/list}}
     </div>
+
+    {{^list}}
+    
+    <div class="container no-list">
+    <img src="img/aviso.jpeg">
+    <h2>Pagina não encontrada<h2>
+    </div>
+
+    {{/list}}
 
     {{>partials/footer}}
